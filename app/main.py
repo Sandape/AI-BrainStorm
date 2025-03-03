@@ -113,3 +113,4 @@ print(f"\n{'='*70}")
 print(f"{'API 服务已就绪':^70}")
 print(f"请通过 {colored('http://localhost:8000', 'cyan')} 访问")
 print(f"{'='*70}")
+# test
