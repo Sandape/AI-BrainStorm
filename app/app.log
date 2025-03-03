@@ -1,0 +1,52 @@
+2025-02-27 15:38:49,721 - app.config - ERROR - No valid model configurations found
+2025-02-27 15:41:36,031 - app.config - ERROR - No valid model configurations found
+2025-02-27 15:41:53,935 - app.config - ERROR - No valid model configurations found
+2025-02-27 15:42:31,520 - app.config - ERROR - No valid model configurations found
+2025-02-27 15:45:13,989 - app.config - ERROR - No valid model configurations found
+2025-02-27 15:46:40,851 - app.config - ERROR - No valid model configurations found
+2025-02-27 15:48:27,402 - app.config - ERROR - No valid model configurations found
+2025-02-27 15:50:45,483 - app.config - ERROR - No valid model configurations found
+2025-02-27 15:51:11,414 - app.config - ERROR - No valid model configurations found
+2025-02-27 15:51:52,915 - app.config - ERROR - No valid model configurations found
+2025-02-27 15:52:08,903 - app.config - ERROR - No valid model configurations found
+2025-02-27 15:52:37,487 - app.config - ERROR - No valid model configurations found
+2025-02-27 15:53:26,349 - app.config - INFO - Validating config for model: deepseek-chat
+2025-02-27 15:53:26,350 - app.config - INFO - Endpoint: api.deepseek.com
+2025-02-27 15:53:26,350 - app.config - INFO - Key length: 35 chars
+2025-02-27 15:55:44,257 - app.config - INFO - Validating config for model: deepseek-chat
+2025-02-27 15:55:44,258 - app.config - INFO - Endpoint: api.deepseek.com
+2025-02-27 15:55:44,258 - app.config - INFO - Key length: 35 chars
+2025-02-27 15:56:08,989 - app.config - INFO - Validating config for model: deepseek-chat
+2025-02-27 15:56:08,990 - app.config - INFO - Endpoint: api.deepseek.com
+2025-02-27 15:56:08,990 - app.config - INFO - Key length: 35 chars
+2025-02-27 15:57:00,657 - app.config - INFO - Validating config for model: deepseek-chat
+2025-02-27 15:57:00,658 - app.config - INFO - Endpoint: api.deepseek.com/chat/completions
+2025-02-27 15:57:00,658 - app.config - INFO - Key length: 35 chars
+2025-02-27 15:58:58,011 - app.config - INFO - Validating config for model: deepseek-chat
+2025-02-27 15:58:58,011 - app.config - INFO - Endpoint: https://api.deepseek.com/v3/chat/completions
+2025-02-27 15:58:58,011 - app.config - INFO - Key length: 35 chars
+2025-02-27 15:59:14,132 - app.config - ERROR - No valid model configurations found
+2025-02-27 16:02:20,169 - app.config - INFO - Validating config for model: deepseek-chat
+2025-02-27 16:02:20,170 - app.config - INFO - Endpoint: https://api.deepseek.com/v3/chat/completions
+2025-02-27 16:02:20,170 - app.config - INFO - Key length: 35 chars
+2025-02-27 16:02:53,490 - app.config - INFO - Validating config for model: deepseek-chat
+2025-02-27 16:02:53,490 - app.config - INFO - Endpoint: https://api.deepseek.com
+2025-02-27 16:02:53,491 - app.config - INFO - Key length: 35 chars
+2025-02-27 16:04:28,277 - app.config - INFO - Validating config for model: deepseek-chat
+2025-02-27 16:04:28,277 - app.config - INFO - Endpoint: https://api.deepseek.com
+2025-02-27 16:04:28,277 - app.config - INFO - Key length: 35 chars
+2025-02-27 16:08:24,994 - app.config - INFO - Validating config for model: deepseek-chat
+2025-02-27 16:08:24,995 - app.config - INFO - Endpoint: https://api.deepseek.com
+2025-02-27 16:08:24,995 - app.config - INFO - Key length: 35 chars
+2025-02-27 16:08:34,507 - app.config - INFO - Validating config for model: deepseek-chat
+2025-02-27 16:08:34,507 - app.config - INFO - Endpoint: https://api.deepseek.com
+2025-02-27 16:08:34,508 - app.config - INFO - Key length: 35 chars
+2025-02-27 16:09:02,332 - app.config - INFO - Validating config for model: deepseek-chat
+2025-02-27 16:09:02,333 - app.config - INFO - Endpoint: https://api.deepseek.com
+2025-02-27 16:09:02,333 - app.config - INFO - Key length: 35 chars
+2025-02-27 16:09:14,280 - app.config - INFO - Validating config for model: deepseek-chat
+2025-02-27 16:09:14,280 - app.config - INFO - Endpoint: https://api.deepseek.com
+2025-02-27 16:09:14,280 - app.config - INFO - Key length: 35 chars
+2025-02-28 10:21:21,223 - app.config - INFO - Validating config for model: deepseek-chat
+2025-02-28 10:21:21,228 - app.config - INFO - Endpoint: https://api.deepseek.com/v3/chat/completions
+2025-02-28 10:21:21,228 - app.config - INFO - Key length: 35 chars
