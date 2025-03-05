@@ -290,6 +290,9 @@ class AIDiscussion {
                                 } else if (modelId === 'glm-4-flash') {
                                     // GLM 模型的格式处理
                                     text = data.choices[0].delta.content || '';
+                                } else if (modelId === 'o3-mini') {
+                                    // GLM 模型的格式处理
+                                    text = data.choices[0].delta.content || '';
                                 }
                                 
                                 if (text) {

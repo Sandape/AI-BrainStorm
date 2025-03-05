@@ -2157,3 +2157,191 @@
 2025-03-03 21:33:42,654 - httpcore.http11 - DEBUG - response_closed.complete
 2025-03-03 21:33:42,660 - httpcore.connection - DEBUG - close.started
 2025-03-03 21:33:42,676 - httpcore.connection - DEBUG - close.complete
+2025-03-05 17:41:39,479 - app.config - INFO - Validating config for model: deepseek-chat
+2025-03-05 17:41:39,481 - app.config - INFO - Endpoint: https://api.deepseek.com/v1/chat/completions
+2025-03-05 17:41:39,481 - app.config - INFO - Key length: 35 chars
+2025-03-05 17:41:39,481 - app.config - INFO - Validating config for model: chatGPT-o3mini
+2025-03-05 17:41:39,481 - app.config - INFO - Endpoint: https://api-us.luee.net/v1/chat/completions
+2025-03-05 17:41:39,482 - app.config - INFO - Key length: 51 chars
+2025-03-05 17:50:48,880 - httpx - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2025-03-05 17:50:48,883 - httpx - DEBUG - load_verify_locations cafile='C:\\Users\\zbzdl\\Anaconda3\\envs\\py39\\lib\\site-packages\\certifi\\cacert.pem'
+2025-03-05 17:50:48,905 - httpcore.connection - DEBUG - connect_tcp.started host='api.deepseek.com' port=443 local_address=None timeout=30.0 socket_options=None
+2025-03-05 17:50:48,965 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x00000232C32B4F10>
+2025-03-05 17:50:48,966 - httpcore.connection - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x00000232C329D040> server_hostname='api.deepseek.com' timeout=30.0
+2025-03-05 17:50:49,020 - httpcore.connection - DEBUG - start_tls.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x00000232C32B4E20>
+2025-03-05 17:50:49,021 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-03-05 17:50:49,022 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-03-05 17:50:49,023 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-03-05 17:50:49,023 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-03-05 17:50:49,023 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-03-05 17:50:49,129 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Wed, 05 Mar 2025 09:50:49 GMT'), (b'Content-Type', b'text/event-stream; charset=utf-8'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'Set-Cookie', b'HWWAFSESID=d3e92a0c468d625b8a; path=/'), (b'Set-Cookie', b'HWWAFSESTIME=1741168246833; path=/'), (b'cache-control', b'no-cache'), (b'vary', b'origin, access-control-request-method, access-control-request-headers'), (b'access-control-allow-credentials', b'true'), (b'x-ds-trace-id', b'6ee6a419c3e5a95ef75ee4b89939633f'), (b'Strict-Transport-Security', b'max-age=31536000; includeSubDomains; preload'), (b'X-Content-Type-Options', b'nosniff'), (b'Server', b'elb')])
+2025-03-05 17:50:49,130 - httpx - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-05 17:50:49,130 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-03-05 17:51:16,958 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-03-05 17:51:16,958 - httpcore.http11 - DEBUG - response_closed.started
+2025-03-05 17:51:16,959 - httpcore.http11 - DEBUG - response_closed.complete
+2025-03-05 17:51:16,960 - httpcore.connection - DEBUG - close.started
+2025-03-05 17:51:16,961 - httpcore.connection - DEBUG - close.complete
+2025-03-05 17:51:16,975 - httpx - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2025-03-05 17:51:16,977 - httpx - DEBUG - load_verify_locations cafile='C:\\Users\\zbzdl\\Anaconda3\\envs\\py39\\lib\\site-packages\\certifi\\cacert.pem'
+2025-03-05 17:51:17,003 - httpcore.connection - DEBUG - connect_tcp.started host='api.deepseek.com' port=443 local_address=None timeout=30.0 socket_options=None
+2025-03-05 17:51:17,041 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x00000232C3301280>
+2025-03-05 17:51:17,041 - httpcore.connection - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x00000232C3276BC0> server_hostname='api.deepseek.com' timeout=30.0
+2025-03-05 17:51:17,081 - httpcore.connection - DEBUG - start_tls.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x00000232C33012B0>
+2025-03-05 17:51:17,081 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-03-05 17:51:17,082 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-03-05 17:51:17,082 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-03-05 17:51:17,083 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-03-05 17:51:17,083 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-03-05 17:51:17,209 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Wed, 05 Mar 2025 09:51:17 GMT'), (b'Content-Type', b'text/event-stream; charset=utf-8'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'Set-Cookie', b'HWWAFSESTIME=1741168274429; path=/'), (b'Set-Cookie', b'HWWAFSESID=1852aa0664692ad00a; path=/'), (b'cache-control', b'no-cache'), (b'vary', b'origin, access-control-request-method, access-control-request-headers'), (b'access-control-allow-credentials', b'true'), (b'x-ds-trace-id', b'c7de0b41ffdb318401f68c941308e5b5'), (b'Strict-Transport-Security', b'max-age=31536000; includeSubDomains; preload'), (b'X-Content-Type-Options', b'nosniff'), (b'Server', b'elb')])
+2025-03-05 17:51:17,210 - httpx - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-05 17:51:17,211 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-03-05 17:51:41,156 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-03-05 17:51:41,157 - httpcore.http11 - DEBUG - response_closed.started
+2025-03-05 17:51:41,158 - httpcore.http11 - DEBUG - response_closed.complete
+2025-03-05 17:51:41,159 - httpcore.connection - DEBUG - close.started
+2025-03-05 17:51:41,161 - httpcore.connection - DEBUG - close.complete
+2025-03-05 17:51:41,172 - httpx - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2025-03-05 17:51:41,173 - httpx - DEBUG - load_verify_locations cafile='C:\\Users\\zbzdl\\Anaconda3\\envs\\py39\\lib\\site-packages\\certifi\\cacert.pem'
+2025-03-05 17:51:41,211 - httpcore.connection - DEBUG - connect_tcp.started host='api.deepseek.com' port=443 local_address=None timeout=30.0 socket_options=None
+2025-03-05 17:51:41,250 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x00000232C3320370>
+2025-03-05 17:51:41,251 - httpcore.connection - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x00000232C329D1C0> server_hostname='api.deepseek.com' timeout=30.0
+2025-03-05 17:51:41,293 - httpcore.connection - DEBUG - start_tls.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x00000232C32B43A0>
+2025-03-05 17:51:41,294 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-03-05 17:51:41,295 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-03-05 17:51:41,295 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-03-05 17:51:41,297 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-03-05 17:51:41,297 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-03-05 17:51:41,412 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Wed, 05 Mar 2025 09:51:41 GMT'), (b'Content-Type', b'text/event-stream; charset=utf-8'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'Set-Cookie', b'HWWAFSESID=d4e90b598f2f5ee77a; path=/'), (b'Set-Cookie', b'HWWAFSESTIME=1741168297436; path=/'), (b'cache-control', b'no-cache'), (b'vary', b'origin, access-control-request-method, access-control-request-headers'), (b'access-control-allow-credentials', b'true'), (b'x-ds-trace-id', b'69dcf4dd6c1a63a31b33779d21dbfdbf'), (b'Strict-Transport-Security', b'max-age=31536000; includeSubDomains; preload'), (b'X-Content-Type-Options', b'nosniff'), (b'Server', b'elb')])
+2025-03-05 17:51:41,413 - httpx - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-05 17:51:41,415 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-03-05 17:52:07,465 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-03-05 17:52:07,465 - httpcore.http11 - DEBUG - response_closed.started
+2025-03-05 17:52:07,465 - httpcore.http11 - DEBUG - response_closed.complete
+2025-03-05 17:52:07,467 - httpcore.connection - DEBUG - close.started
+2025-03-05 17:52:07,468 - httpcore.connection - DEBUG - close.complete
+2025-03-05 17:52:28,671 - httpx - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2025-03-05 17:52:28,673 - httpx - DEBUG - load_verify_locations cafile='C:\\Users\\zbzdl\\Anaconda3\\envs\\py39\\lib\\site-packages\\certifi\\cacert.pem'
+2025-03-05 17:52:28,695 - httpcore.connection - DEBUG - connect_tcp.started host='api.deepseek.com' port=443 local_address=None timeout=30.0 socket_options=None
+2025-03-05 17:52:28,734 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x00000232C33239A0>
+2025-03-05 17:52:28,734 - httpcore.connection - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x00000232C329D240> server_hostname='api.deepseek.com' timeout=30.0
+2025-03-05 17:52:28,783 - httpcore.connection - DEBUG - start_tls.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x00000232C3320EE0>
+2025-03-05 17:52:28,783 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-03-05 17:52:28,784 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-03-05 17:52:28,784 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-03-05 17:52:28,785 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-03-05 17:52:28,785 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-03-05 17:52:28,901 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Wed, 05 Mar 2025 09:52:28 GMT'), (b'Content-Type', b'text/event-stream; charset=utf-8'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'Set-Cookie', b'HWWAFSESTIME=1741168346091; path=/'), (b'Set-Cookie', b'HWWAFSESID=80857b5ab39a426381; path=/'), (b'cache-control', b'no-cache'), (b'vary', b'origin, access-control-request-method, access-control-request-headers'), (b'access-control-allow-credentials', b'true'), (b'x-ds-trace-id', b'6060f2513f4dad84049da175c936ba3e'), (b'Strict-Transport-Security', b'max-age=31536000; includeSubDomains; preload'), (b'X-Content-Type-Options', b'nosniff'), (b'Server', b'elb')])
+2025-03-05 17:52:28,902 - httpx - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-05 17:52:28,903 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-03-05 17:53:00,287 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-03-05 17:53:00,288 - httpcore.http11 - DEBUG - response_closed.started
+2025-03-05 17:53:00,289 - httpcore.http11 - DEBUG - response_closed.complete
+2025-03-05 17:53:00,290 - httpcore.connection - DEBUG - close.started
+2025-03-05 17:53:00,291 - httpcore.connection - DEBUG - close.complete
+2025-03-05 21:27:38,636 - app.config - INFO - Validating config for model: deepseek-chat
+2025-03-05 21:27:38,636 - app.config - INFO - Endpoint: https://api.deepseek.com/v1/chat/completions
+2025-03-05 21:27:38,636 - app.config - INFO - Key length: 35 chars
+2025-03-05 21:27:38,636 - app.config - INFO - Validating config for model: chatGPT-o3mini
+2025-03-05 21:27:38,636 - app.config - INFO - Endpoint: https://api-us.luee.net/v1/chat/completions
+2025-03-05 21:27:38,636 - app.config - INFO - Key length: 51 chars
+2025-03-05 23:08:53,555 - app.config - INFO - Validating config for model: deepseek-chat
+2025-03-05 23:08:53,555 - app.config - INFO - Endpoint: https://api.deepseek.com/v1/chat/completions
+2025-03-05 23:08:53,555 - app.config - INFO - Key length: 35 chars
+2025-03-05 23:08:53,555 - app.config - INFO - Validating config for model: chatGPT-o3mini
+2025-03-05 23:08:53,555 - app.config - INFO - Endpoint: https://api-us.luee.net/v1/chat/completions
+2025-03-05 23:08:53,555 - app.config - INFO - Key length: 51 chars
+2025-03-05 17:41:39,479 - app.config - INFO - Validating config for model: deepseek-chat
+2025-03-05 17:41:39,481 - app.config - INFO - Endpoint: https://api.deepseek.com/v1/chat/completions
+2025-03-05 17:41:39,481 - app.config - INFO - Key length: 35 chars
+2025-03-05 17:41:39,481 - app.config - INFO - Validating config for model: chatGPT-o3mini
+2025-03-05 17:41:39,481 - app.config - INFO - Endpoint: https://api-us.luee.net/v1/chat/completions
+2025-03-05 17:41:39,482 - app.config - INFO - Key length: 51 chars
+2025-03-05 17:50:48,880 - httpx - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2025-03-05 17:50:48,883 - httpx - DEBUG - load_verify_locations cafile='C:\\Users\\zbzdl\\Anaconda3\\envs\\py39\\lib\\site-packages\\certifi\\cacert.pem'
+2025-03-05 17:50:48,905 - httpcore.connection - DEBUG - connect_tcp.started host='api.deepseek.com' port=443 local_address=None timeout=30.0 socket_options=None
+2025-03-05 17:50:48,965 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x00000232C32B4F10>
+2025-03-05 17:50:48,966 - httpcore.connection - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x00000232C329D040> server_hostname='api.deepseek.com' timeout=30.0
+2025-03-05 17:50:49,020 - httpcore.connection - DEBUG - start_tls.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x00000232C32B4E20>
+2025-03-05 17:50:49,021 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-03-05 17:50:49,022 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-03-05 17:50:49,023 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-03-05 17:50:49,023 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-03-05 17:50:49,023 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-03-05 17:50:49,129 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Wed, 05 Mar 2025 09:50:49 GMT'), (b'Content-Type', b'text/event-stream; charset=utf-8'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'Set-Cookie', b'HWWAFSESID=d3e92a0c468d625b8a; path=/'), (b'Set-Cookie', b'HWWAFSESTIME=1741168246833; path=/'), (b'cache-control', b'no-cache'), (b'vary', b'origin, access-control-request-method, access-control-request-headers'), (b'access-control-allow-credentials', b'true'), (b'x-ds-trace-id', b'6ee6a419c3e5a95ef75ee4b89939633f'), (b'Strict-Transport-Security', b'max-age=31536000; includeSubDomains; preload'), (b'X-Content-Type-Options', b'nosniff'), (b'Server', b'elb')])
+2025-03-05 17:50:49,130 - httpx - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-05 17:50:49,130 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-03-05 17:51:16,958 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-03-05 17:51:16,958 - httpcore.http11 - DEBUG - response_closed.started
+2025-03-05 17:51:16,959 - httpcore.http11 - DEBUG - response_closed.complete
+2025-03-05 17:51:16,960 - httpcore.connection - DEBUG - close.started
+2025-03-05 17:51:16,961 - httpcore.connection - DEBUG - close.complete
+2025-03-05 17:51:16,975 - httpx - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2025-03-05 17:51:16,977 - httpx - DEBUG - load_verify_locations cafile='C:\\Users\\zbzdl\\Anaconda3\\envs\\py39\\lib\\site-packages\\certifi\\cacert.pem'
+2025-03-05 17:51:17,003 - httpcore.connection - DEBUG - connect_tcp.started host='api.deepseek.com' port=443 local_address=None timeout=30.0 socket_options=None
+2025-03-05 17:51:17,041 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x00000232C3301280>
+2025-03-05 17:51:17,041 - httpcore.connection - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x00000232C3276BC0> server_hostname='api.deepseek.com' timeout=30.0
+2025-03-05 17:51:17,081 - httpcore.connection - DEBUG - start_tls.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x00000232C33012B0>
+2025-03-05 17:51:17,081 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-03-05 17:51:17,082 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-03-05 17:51:17,082 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-03-05 17:51:17,083 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-03-05 17:51:17,083 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-03-05 17:51:17,209 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Wed, 05 Mar 2025 09:51:17 GMT'), (b'Content-Type', b'text/event-stream; charset=utf-8'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'Set-Cookie', b'HWWAFSESTIME=1741168274429; path=/'), (b'Set-Cookie', b'HWWAFSESID=1852aa0664692ad00a; path=/'), (b'cache-control', b'no-cache'), (b'vary', b'origin, access-control-request-method, access-control-request-headers'), (b'access-control-allow-credentials', b'true'), (b'x-ds-trace-id', b'c7de0b41ffdb318401f68c941308e5b5'), (b'Strict-Transport-Security', b'max-age=31536000; includeSubDomains; preload'), (b'X-Content-Type-Options', b'nosniff'), (b'Server', b'elb')])
+2025-03-05 17:51:17,210 - httpx - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-05 17:51:17,211 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-03-05 17:51:41,156 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-03-05 17:51:41,157 - httpcore.http11 - DEBUG - response_closed.started
+2025-03-05 17:51:41,158 - httpcore.http11 - DEBUG - response_closed.complete
+2025-03-05 17:51:41,159 - httpcore.connection - DEBUG - close.started
+2025-03-05 17:51:41,161 - httpcore.connection - DEBUG - close.complete
+2025-03-05 17:51:41,172 - httpx - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2025-03-05 17:51:41,173 - httpx - DEBUG - load_verify_locations cafile='C:\\Users\\zbzdl\\Anaconda3\\envs\\py39\\lib\\site-packages\\certifi\\cacert.pem'
+2025-03-05 17:51:41,211 - httpcore.connection - DEBUG - connect_tcp.started host='api.deepseek.com' port=443 local_address=None timeout=30.0 socket_options=None
+2025-03-05 17:51:41,250 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x00000232C3320370>
+2025-03-05 17:51:41,251 - httpcore.connection - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x00000232C329D1C0> server_hostname='api.deepseek.com' timeout=30.0
+2025-03-05 17:51:41,293 - httpcore.connection - DEBUG - start_tls.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x00000232C32B43A0>
+2025-03-05 17:51:41,294 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-03-05 17:51:41,295 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-03-05 17:51:41,295 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-03-05 17:51:41,297 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-03-05 17:51:41,297 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-03-05 17:51:41,412 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Wed, 05 Mar 2025 09:51:41 GMT'), (b'Content-Type', b'text/event-stream; charset=utf-8'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'Set-Cookie', b'HWWAFSESID=d4e90b598f2f5ee77a; path=/'), (b'Set-Cookie', b'HWWAFSESTIME=1741168297436; path=/'), (b'cache-control', b'no-cache'), (b'vary', b'origin, access-control-request-method, access-control-request-headers'), (b'access-control-allow-credentials', b'true'), (b'x-ds-trace-id', b'69dcf4dd6c1a63a31b33779d21dbfdbf'), (b'Strict-Transport-Security', b'max-age=31536000; includeSubDomains; preload'), (b'X-Content-Type-Options', b'nosniff'), (b'Server', b'elb')])
+2025-03-05 17:51:41,413 - httpx - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-05 17:51:41,415 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-03-05 17:52:07,465 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-03-05 17:52:07,465 - httpcore.http11 - DEBUG - response_closed.started
+2025-03-05 17:52:07,465 - httpcore.http11 - DEBUG - response_closed.complete
+2025-03-05 17:52:07,467 - httpcore.connection - DEBUG - close.started
+2025-03-05 17:52:07,468 - httpcore.connection - DEBUG - close.complete
+2025-03-05 17:52:28,671 - httpx - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2025-03-05 17:52:28,673 - httpx - DEBUG - load_verify_locations cafile='C:\\Users\\zbzdl\\Anaconda3\\envs\\py39\\lib\\site-packages\\certifi\\cacert.pem'
+2025-03-05 17:52:28,695 - httpcore.connection - DEBUG - connect_tcp.started host='api.deepseek.com' port=443 local_address=None timeout=30.0 socket_options=None
+2025-03-05 17:52:28,734 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x00000232C33239A0>
+2025-03-05 17:52:28,734 - httpcore.connection - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x00000232C329D240> server_hostname='api.deepseek.com' timeout=30.0
+2025-03-05 17:52:28,783 - httpcore.connection - DEBUG - start_tls.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x00000232C3320EE0>
+2025-03-05 17:52:28,783 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-03-05 17:52:28,784 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-03-05 17:52:28,784 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-03-05 17:52:28,785 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-03-05 17:52:28,785 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-03-05 17:52:28,901 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Wed, 05 Mar 2025 09:52:28 GMT'), (b'Content-Type', b'text/event-stream; charset=utf-8'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'Set-Cookie', b'HWWAFSESTIME=1741168346091; path=/'), (b'Set-Cookie', b'HWWAFSESID=80857b5ab39a426381; path=/'), (b'cache-control', b'no-cache'), (b'vary', b'origin, access-control-request-method, access-control-request-headers'), (b'access-control-allow-credentials', b'true'), (b'x-ds-trace-id', b'6060f2513f4dad84049da175c936ba3e'), (b'Strict-Transport-Security', b'max-age=31536000; includeSubDomains; preload'), (b'X-Content-Type-Options', b'nosniff'), (b'Server', b'elb')])
+2025-03-05 17:52:28,902 - httpx - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-05 17:52:28,903 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-03-05 17:53:00,287 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-03-05 17:53:00,288 - httpcore.http11 - DEBUG - response_closed.started
+2025-03-05 17:53:00,289 - httpcore.http11 - DEBUG - response_closed.complete
+2025-03-05 17:53:00,290 - httpcore.connection - DEBUG - close.started
+2025-03-05 17:53:00,291 - httpcore.connection - DEBUG - close.complete
+2025-03-05 21:27:38,636 - app.config - INFO - Validating config for model: deepseek-chat
+2025-03-05 21:27:38,636 - app.config - INFO - Endpoint: https://api.deepseek.com/v1/chat/completions
+2025-03-05 21:27:38,636 - app.config - INFO - Key length: 35 chars
+2025-03-05 21:27:38,636 - app.config - INFO - Validating config for model: chatGPT-o3mini
+2025-03-05 21:27:38,636 - app.config - INFO - Endpoint: https://api-us.luee.net/v1/chat/completions
+2025-03-05 21:27:38,636 - app.config - INFO - Key length: 51 chars
+2025-03-05 23:08:53,555 - app.config - INFO - Validating config for model: deepseek-chat
+2025-03-05 23:08:53,555 - app.config - INFO - Endpoint: https://api.deepseek.com/v1/chat/completions
+2025-03-05 23:08:53,555 - app.config - INFO - Key length: 35 chars
+2025-03-05 23:08:53,555 - app.config - INFO - Validating config for model: chatGPT-o3mini
+2025-03-05 23:08:53,555 - app.config - INFO - Endpoint: https://api-us.luee.net/v1/chat/completions
+2025-03-05 23:08:53,555 - app.config - INFO - Key length: 51 chars

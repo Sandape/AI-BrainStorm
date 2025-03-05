@@ -92,15 +92,15 @@ app.include_router(chat.router, prefix="/api")  # 添加/api前缀
 log_success("API路由注册完成")
 
 # 日志系统配置（生产环境必备）[5](@ref)
-logging.basicConfig(
-    level=logging.INFO,  # 设置日志级别
-    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',  # 日志格式
-    handlers=[
-        logging.FileHandler('app.log'),  # 文件日志
-        logging.StreamHandler()  # 控制台日志
-    ]
-)
-log_success("日志系统初始化完成")
+# logging.basicConfig(
+#     level=logging.INFO,  # 设置日志级别
+#     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',  # 日志格式
+#     handlers=[
+#         logging.FileHandler('app.log'),  # 文件日志
+#         logging.StreamHandler()  # 控制台日志
+#     ]
+# )
+# log_success("日志系统初始化完成")
 
 # 根路由处理（入口页面）[1](@ref)
 @app.get("/")
