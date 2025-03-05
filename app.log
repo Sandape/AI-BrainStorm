@@ -2345,3 +2345,9 @@
 2025-03-05 23:08:53,555 - app.config - INFO - Validating config for model: chatGPT-o3mini
 2025-03-05 23:08:53,555 - app.config - INFO - Endpoint: https://api-us.luee.net/v1/chat/completions
 2025-03-05 23:08:53,555 - app.config - INFO - Key length: 51 chars
+2025-03-05 23:11:18,521 - app.config - INFO - Validating config for model: deepseek-chat
+2025-03-05 23:11:18,522 - app.config - INFO - Endpoint: https://api.deepseek.com/v1/chat/completions
+2025-03-05 23:11:18,522 - app.config - INFO - Key length: 35 chars
+2025-03-05 23:11:18,522 - app.config - INFO - Validating config for model: chatGPT-o3mini
+2025-03-05 23:11:18,522 - app.config - INFO - Endpoint: https://api-us.luee.net/v1/chat/completions
+2025-03-05 23:11:18,522 - app.config - INFO - Key length: 51 chars
