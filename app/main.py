@@ -29,6 +29,7 @@ def log_warning(message):
 def log_error(message):
     """错误级别日志（红色）"""
     print(colored(f"[-] {datetime.now()} ❌ {message}", "red"))
+    raise ValueError() # raise 是python语言用于抛出异常的关键字
 
 def log_success(message):
     """成功状态日志（绿色）"""

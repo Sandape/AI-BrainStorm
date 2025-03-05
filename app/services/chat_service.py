@@ -1,7 +1,9 @@
+# chat_service.py
 import httpx
 import asyncio
 from typing import Dict, List, Any, AsyncGenerator
 from ..config import MODELS
+import app
 
 class ChatService:
     async def process_chat(self, data: Dict) -> str:
@@ -10,10 +12,10 @@ class ChatService:
         temperature = float(data.get("temperature", 0.7))
         
         if not 0 <= temperature <= 1:
-            raise ValueError("Temperature must be between 0 and 1")
+            app.log_error("随机性必须在0和1之间！")
             
         if not model_id or not message:
-            raise ValueError("Missing required fields: model and message")
+            app.log_error("缺少必需字段：model和message")
             
         async with httpx.AsyncClient(timeout=30.0) as client:
             response = await self._make_api_request(
@@ -27,10 +29,10 @@ class ChatService:
         temperature = float(data.get("temperature", 0.7))
         
         if not topic or not models:
-            raise ValueError("Missing required fields: topic and models")
+            app.log_error("缺少必需字段：topic和models")
             
         if len(models) > 3:
-            raise ValueError("Maximum 3 models allowed for discussion")
+            app.log_error("最多允许3个模型进行讨论")
             
         messages = []
         for round_num in range(1, 4):
@@ -59,10 +61,10 @@ class ChatService:
                                message: str, temperature: float) -> Dict:
         model_config = MODELS.get(model_id)
         if not model_config:
-            raise ValueError(f"Model {model_id} not found")
+            app.log_error(f"模型 {model_id} 未找到")
             
         if not model_config.get('key'):
-            raise ValueError(f"API key not configured for model {model_id}")
+            app.log_error(f"模型 {model_id} 的API密钥未配置")
             
         headers = {
             "Content-Type": "application/json",
@@ -88,7 +90,7 @@ class ChatService:
             content = message.get("content", "")
             if content:
                 return content
-        raise ValueError("Invalid or empty response from API")
+        app.log_error("API响应无效或为空")
         
     def _build_prompt(self, topic: str, round: int, index: int, messages: list) -> str:
         if round == 1:
@@ -145,10 +147,10 @@ class ChatService:
         temperature = float(data.get("temperature", 0.7))
         
         if not 0 <= temperature <= 1:
-            raise ValueError("Temperature must be between 0 and 1")
+            app.log_error("随机性必须在0和1之间！")
             
         if not model_id or not message:
-            raise ValueError("Missing required fields: model and message")
+            app.log_error("缺少必需字段：model和message")
             
         async with httpx.AsyncClient(timeout=30.0) as client:
             response = await self._make_api_request(
@@ -161,4 +163,4 @@ class ChatService:
             # 模拟流式输出，按词输出
             for word in words:
                 yield word + ' '
-                await asyncio.sleep(0.05)  # 控制输出速度 
+                await asyncio.sleep(0.05)  # 控制输出速度
