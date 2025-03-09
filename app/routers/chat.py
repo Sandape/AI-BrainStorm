@@ -54,7 +54,9 @@ async def model_api(model_id: str, request: Request):
             return JSONResponse({"error": "Model not found"}, status_code=404)
             
         data = await request.json()
-        
+        if 'temperature' in data:
+            del data['temperature']
+
         if isinstance(data, dict):
             if 'stream' not in data:
                 data['stream'] = True

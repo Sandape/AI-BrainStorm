@@ -9,24 +9,20 @@ class ChatService:
     async def process_chat(self, data: Dict) -> str:
         model_id = data.get("model")
         message = data.get("message")
-        temperature = float(data.get("temperature", 0.7))
-        
-        if not 0 <= temperature <= 1:
-            app.log_error("随机性必须在0和1之间！")
+
             
         if not model_id or not message:
             app.log_error("缺少必需字段：model和message")
             
         async with httpx.AsyncClient(timeout=30.0) as client:
             response = await self._make_api_request(
-                client, model_id, message, temperature
+                client, model_id, message
             )
             return self._extract_content(response)
     
     async def process_discussion(self, data: Dict) -> List[Dict[str, Any]]:
         topic = data.get("topic")
         models = data.get("models", [])
-        temperature = float(data.get("temperature", 0.7))
         
         if not topic or not models:
             app.log_error("缺少必需字段：topic和models")
@@ -41,8 +37,7 @@ class ChatService:
                 prompt = self._build_prompt(topic, round_num, len(round_messages), messages)
                 response = await self.process_chat({
                     "model": model_id,
-                    "message": prompt,
-                    "temperature": temperature
+                    "message": prompt
                 })
                 
                 message = {
@@ -142,17 +137,14 @@ class ChatService:
     async def stream_response(self, data: Dict) -> AsyncGenerator[str, None]:
         model_id = data.get("model")
         message = data.get("message")
-        temperature = float(data.get("temperature", 0.7))
-        
-        if not 0 <= temperature <= 1:
-            app.log_error("随机性必须在0和1之间！")
+
             
         if not model_id or not message:
             app.log_error("缺少必需字段：model和message")
             
         async with httpx.AsyncClient(timeout=30.0) as client:
             response = await self._make_api_request(
-                client, model_id, message, temperature
+                client, model_id, message
             )
             
             content = self._extract_content(response)
