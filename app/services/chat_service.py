@@ -75,9 +75,7 @@ class ChatService:
             model_config["endpoint"],
             json={
                 "model": model_id,
-                "messages": [{"role": "user", "content": message}],
-                "temperature": temperature,
-                "max_tokens": 1000
+                "messages": [{"role": "user", "content": message}]
             },
             headers=headers
         )
